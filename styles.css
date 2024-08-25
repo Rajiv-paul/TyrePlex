@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('img/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card.service-card {
+    width: 180px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.tyre-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card.tyre-card:hover {
+    transform: scale(1.05);
+}
+
+.deal-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.carousel-inner {
+    background-color: rgba(23, 87, 113, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+/* Updated Deals in Tyre Brands Section for Carousel */
+.brand-carousel {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensures snapping effect */
+    gap: 1rem; /* Adds spacing between cards */
+    padding: 1rem; /* Adds padding around the carousel */
+}
+
+.brand-carousel::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for a cleaner look */
+}
+
+.card.brand-card {
+    width: 180px;
+    flex: 0 0 auto; /* Prevents cards from shrinking */
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: start; /* Ensures each card snaps into view */
+}
+
+.card-img-top {
+    height: 120px;
+    object-fit: cover;
+}
+
+.card.brand-card .card-body {
+    padding: 10px;
+    
+}
+
+
+.card.brand-card .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card.tyre-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card.tyre-card:hover {
+    transform: scale(1.05);
+}
+
+.deal-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.card-reviews {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.review-count {
+    margin-right: 10px;
+}
+
+.star-rating {
+    color: #f39c12; /* Gold color for stars */
+}
+
+.star-rating i {
+    margin-right: 2px;
+}
+
+/* Hide the star half icon if you want to use only full stars */
+.star-rating i.fa-star-half-alt {
+    display: inline;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.card-img-top {
+    height: 120px;
+    object-fit: cover;
+}
+
+.card.service-card {
+    width: 180px;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* for image in service section */
+
+.card-img-top {
+    height: 120px; /* Adjust height as needed */
+    object-fit:contain;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/* nav hover effect */
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav .dropdown-menu {
+    margin-top: 0; 
+  }
+
+
+
+/* Responsive styles for carousel */
+@media (max-width: 576px) {
+    .card.brand-card {
+        width: 150px; /* Smaller cards on smaller screens */
+    }
+    
+    .card-img-top {
+        height: 100px; /* Smaller images on smaller screens */
+    }
+}

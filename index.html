@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Shree Hemkunt Tyres and Services</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">TyrePlex</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="carTyresDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Car Tyres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="carTyresDropdown">
+                  <li><a class="dropdown-item" href="#">Apollo</a></li>
+                  <li><a class="dropdown-item" href="#">Michelin</a></li>
+                  <li><a class="dropdown-item" href="#">CEAT</a></li>
+                  <li><a class="dropdown-item" href="#">MRF</a></li>
+                  <li><a class="dropdown-item" href="#">Bridgestone</a></li>
+                  <li><a class="dropdown-item" href="#">All Car Tyres</a></li>
+                  <!-- Add more brands as needed -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="bikeTyresDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Bike Tyres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="bikeTyresDropdown">
+                  <li><a class="dropdown-item" href="#">TVS Eurogrip</a></li>
+                  <li><a class="dropdown-item" href="#">JK Tyre</a></li>
+                  <li><a class="dropdown-item" href="#">Yokohama</a></li>
+                  <li><a class="dropdown-item" href="#">Hankook</a></li>
+                  <li><a class="dropdown-item" href="#">Falken</a></li>
+                  <li><a class="dropdown-item" href="#">All Bike Tyres</a></li>
+                  <!-- Add more brands as needed -->
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tyre Pressure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Commercial Tyres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-black ms-2"
+              href="#"
+              >Login</a
+            >
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>Welcome to Shree Hemkunt Tyres and Services</h1>
+        <p>Your one-stop shop for all your tyre needs in Ghaziabad.</p>
+        <a href="#services" class="btn btn-outline-light btn-lg">Explore Services</a>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Dealer Info Section -->
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h2>Shree Hemkunt Tyres and Services</h2>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i> PLOT NUMBER-09 GROUND FLOOR CISF
+            CAMPUS ROAD, AHINSA KHAND-02 INDIRAPURAM, Ghaziabad, Uttar Pradesh,
+            201014
+          </p>
+          <p>
+            <i class="bi bi-clock"></i> Open - Monday to Sunday - 10:00 AM to
+            8:00 PM
+          </p>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="tel:+919999999999" class="btn btn-primary"
+            ><i class="bi bi-telephone-fill"></i> Call Now</a
+          >
+          <a href="#" class="btn btn-danger">Get Directions</a>
+        </div>
+      </div>
+
+      <!-- Customer Reviews Slider -->
+      <div class="row mt-4">
+        <div class="col">
+          <h3>What Our Customers Say</h3>
+          <div
+            id="customerReviewsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="review">
+                  <h5>Md Nasir</h5>
+                  <p>
+                    Excellent service from start to finish. 100% satisfaction
+                    with the job, professionalism, and overall service.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="review">
+                  <h5>Rohit Bhati</h5>
+                  <p>
+                    Went for Tyre change. Ultimate service by shoppe boys. Owner
+                    behavior very cool. Guide as per your budget. Highly
+                    recommend.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="review">
+                  <h5>Pradeep Kumar</h5>
+                  <p>
+                    Best tyre shop in Indirapuram. Good dealing with customers.
+                    All types of tyres are available here. Prices are also
+                    reasonable. Overall good experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#customerReviewsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#customerReviewsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Deals in Tyre Brands Section -->
+      <div class="row mt-5">
+        <div class="col">
+          <h3>Deals in Tyre Brands</h3>
+          <!-- Tyre Brands Carousel -->
+          <div
+            id="tyreBrandsCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/apollo.png"
+                      class="card-img-top"
+                      alt="Apollo Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Apollo</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/michelin.png"
+                      class="card-img-top"
+                      alt="Michelin Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Michelin</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/ceat.png"
+                      class="card-img-top"
+                      alt="CEAT Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">CEAT</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Additional carousel items for more brands -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/MRF.png"
+                      class="card-img-top"
+                      alt="MRF Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">MRF</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/bridgestone.png"
+                      class="card-img-top"
+                      alt="Bridgestone Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Bridgestone</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/goodyear.png"
+                      class="card-img-top"
+                      alt="Goodyear Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Goodyear</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more carousel items as needed -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/pirelli.png"
+                      class="card-img-top"
+                      alt="Pirelli"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Pirelli</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/tvs.png"
+                      class="card-img-top"
+                      alt="TVS Eurogrip"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">TVS Eurogrip</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/Jk-tyre.png"
+                      class="card-img-top"
+                      alt="JK Tyre"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jk Tyre</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/Yokohama.png"
+                      class="card-img-top"
+                      alt="Yokohama"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Yokohama</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/Hankook.png"
+                      class="card-img-top"
+                      alt="Hankook"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Hankook</h5>
+                    </div>
+                  </div>
+                  <div class="card brand-card m-2">
+                    <img
+                      src="img/Falken.png"
+                      class="card-img-top"
+                      alt="Falken Tyres"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Falken</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#tyreBrandsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#tyreBrandsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Offered Section -->
+      <div class="row mt-5" id="services">
+        <div class="col">
+            <h3>Our Services</h3>
+            <div class="d-flex flex-wrap">
+                <div class="card service-card m-2" data-bs-toggle="tooltip" title="We provide precise wheel balancing for a smoother ride.">
+                    <img src="img/balancing.png" class="card-img-top" alt="Wheel Balancing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wheel Balancing</h5>
+                    </div>
+                </div>
+                <div class="card service-card m-2" data-bs-toggle="tooltip" title="Proper alignment to prevent uneven tire wear.">
+                    <img src="img/alignment.png" class="card-img-top" alt="Wheel Alignment">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wheel Alignment</h5>
+                    </div>
+                </div>
+                <!-- Add more services with images as needed -->
+            </div>
+        </div>
+    </div>
+
+      <!-- Featured Tyres Section with Deals -->
+      <div class="row mt-5">
+        <div class="col">
+          <h3>Featured Tyres and Deals</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="card tyre-card mb-4"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                title="Apollo AMAZER 4G LIFE Deal"
+                data-bs-content="Buy 2 and get 10% off!"
+              >
+                <img
+                  src="img/apollo-4g-life.png"
+                  class="card-img-top"
+                  alt="Apollo AMAZER 4G LIFE"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Apollo AMAZER 4G LIFE</h5>
+                  <p class="card-text">145/80 R12</p>
+                  <p class="card-text">
+                    <span class="deal-price">₹ 2,800</span>
+                    <span class="original-price text-muted"
+                      ><del>₹ 3,136</del></span
+                    >
+                  </p>
+                  <p class="card-reviews">
+                    <span class="review-count">150 reviews</span>
+                    <span class="star-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-alt"></i>
+                    </span>
+                  </p>
+                  <p clas="card-text">Tube Type</p>
+                  <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card tyre-card mb-4"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                title="Apollo AMAZER 4G LIFE Deal"
+                data-bs-content="Buy 2 and get 10% off!"
+              >
+                <img
+                  src="img/apollo-4g-life.png"
+                  class="card-img-top"
+                  alt="Apollo AMAZER 4G LIFE"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Apollo AMAZER 4G LIFE</h5>
+                  <p class="card-text">145/80 R13</p>
+                  <p class="card-text">
+                    <span class="deal-price">₹ 3,000</span>
+                    <span class="original-price text-muted"
+                      ><del>₹ 3,562</del></span
+                    >
+                  </p>
+                  <p class="card-reviews">
+                    <span class="review-count">150 reviews</span>
+                    <span class="star-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-alt"></i>
+                    </span>
+                  </p>
+                  <p clas="card-text">Tubeless</p>
+                  <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div
+                class="card tyre-card mb-4"
+                data-bs-toggle="popover"
+                data-bs-trigger="hover"
+                title="Apollo AMAZER 4G LIFE Deal"
+                data-bs-content="Buy 2 and get 10% off!"
+              >
+                <img
+                  src="img/apollo-4g-life.png"
+                  class="card-img-top"
+                  alt="Apollo AMAZER 4G LIFE"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Apollo AMAZER 4G LIFE</h5>
+                  <p class="card-text">155/65 R13</p>
+                  <p class="card-text">
+                    <span class="deal-price">₹ 2,900</span>
+                    <span class="original-price text-muted"
+                      ><del>₹ 3,402</del></span
+                    >
+                  </p>
+                  <p class="card-reviews">
+                    <span class="review-count">150 reviews</span>
+                    <span class="star-rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-alt"></i>
+                    </span>
+                  </p>
+                  <p clas="card-text">Tube Type</p>
+                  <a href="#" class="btn btn-primary w-100">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repeat for more tyres -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row mt-5">
+        <div class="col">
+          <h3>Get in Touch</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                placeholder="Type your message here"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+      <p>&copy; 2024 TyrePlex. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Enable tooltips
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+
+      // Enable popovers
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+  </body>
+</html>
